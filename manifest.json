@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "ZK Chrome Talk",
+    "version": "1.0.0",
+    "description": "A simple Chromium-browser extension to use Zendesk Talk from anywhere.",
+    "permissions": ["storage"],
+    "host_permissions": ["https://*.zendesk.com/*"],
+    "background": {
+      "service_worker": "src/background/serviceWorker.js"
+    },
+    "action": {
+      "default_popup": "src/popup/popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      },
+      "default_title": "Zendesk Talk"
+    },
+    "icons": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    },
+    "options_ui": {
+      "page": "src/settings/settings.html",
+      "open_in_tab": true
+    }
+  }
+  

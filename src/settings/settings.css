@@ -1,0 +1,97 @@
+/* General Styles */
+body {
+    font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 300px; /* Fixed width to match popup.css */
+    height: 550px; /* Fixed height to match popup.css */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the top */
+    background-color: #f9f9f9;
+    overflow: hidden; /* Prevent scrolling */
+    box-shadow: none; /* Removed unnecessary shadow */
+}
+
+/* Back Button */
+#back-icon {
+    font-size: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #036b52; /* Zendesk green */
+}
+
+/* Settings Header */
+h1 {
+    font-size: 24px;
+    color: #0f3c44;
+    margin: 40px 0; /* Adds spacing below the header */
+    text-align: center;
+}
+
+/* Settings Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Adjusted spacing between fields */
+    width: 100%; /* Slightly reduced width for better alignment */
+    margin-top: 40px; /* Adds spacing below the header */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%; /* Ensure consistent width */
+}
+
+label {
+    font-size: 14px; /* Increased font size for field names */
+    color: #333;
+    text-align: center; /* Align labels to the left */
+}
+
+input {
+    font-size: 14px; /* Slightly larger font size */
+    height: 30px; /* Doubled height for input fields */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    width: 100%; /* Full width within the reduced form size */
+    text-align: center; /* Center input text */
+}
+
+/* Save Button */
+button#save-settings {
+    padding: 10px 15px; /* Adjusted padding for larger button */
+    font-size: 14px; /* Increased font size to match input fields */
+    color: #fff;
+    background-color: #036b52; /* Zendesk green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#save-settings:hover {
+    background-color: #028a65; /* Slightly lighter green */
+}
+
+/* Footer Text */
+#footer-text {
+    font-size: 10px;
+    color: #555;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#footer-text a {
+    color: #036b52;
+    text-decoration: none;
+}
+
+#footer-text a:hover {
+    text-decoration: line-through;
+}

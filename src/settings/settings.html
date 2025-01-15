@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="settings.css">
+    <title>Settings</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Back Button -->
+        <div id="back-icon" title="Back">←</div>
+
+        <!-- Settings Form -->
+        <h1>Settings</h1>
+        <form id="settings-form">
+            <div class="form-group">
+                <label for="subdomain">Zendesk Subdomain</label>
+                <input type="text" id="subdomain" />
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" />
+            </div>
+            <div class="form-group">
+                <label for="api-token">API Token</label>
+                <input type="password" id="api-token" />
+            </div>
+            <button type="submit" id="save-settings">Save</button>
+        </form>
+    </div>
+    <script src="settings.js" type="module"></script>
+</body>
+</html>

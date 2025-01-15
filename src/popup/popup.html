@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+    <title>Zendesk Talk</title>
+</head>
+<body>
+    <div id="app">
+        <!-- Settings Icon -->
+        <div id="settings-icon" title="Settings">⚙️</div>
+
+        <!-- Logo -->
+        <img src="../../icons/icon128.png" alt="Zendesk Logo" id="logo">
+
+        <!-- Country Code Selector -->
+        <div id="country-selector">
+            <select id="country-code">
+                <option value="+1">🇺🇸 +1</option>
+                <option value="+44">🇬🇧 +44</option>
+                <option value="+91">🇮🇳 +91</option>
+            </select>
+        </div>
+
+        <!-- Dialer -->
+        <div id="dialer">
+            <div id="phone-number-display"></div>
+            <div class="row">
+                <button class="num-btn">1</button>
+                <button class="num-btn">2</button>
+                <button class="num-btn">3</button>
+            </div>
+            <div class="row">
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+            </div>
+            <div class="row">
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+            </div>
+            <div class="row">
+                <button class="num-btn">*</button>
+                <button class="num-btn">0</button>
+                <button class="num-btn">#</button>
+            </div>
+            <div class="action-buttons">
+                <button id="call-btn" title="Call"></button>
+                <button id="backspace-btn" title="Backspace">←</button>
+                <button id="hangup-btn" title="Clear"></button>
+            </div>
+        </div>
+
+        <!-- Footer Text -->
+        <div id="footer-text">
+            created by <a href="https://nevskycollective.com" target="_blank">nevsky collective</a>
+        </div>
+    </div>
+    <script src="popup.js" type="module"></script>
+</body>
+</html>

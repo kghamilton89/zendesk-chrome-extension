@@ -1,0 +1,205 @@
+/* General Styles */
+body {
+    font-family: "San Francisco", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 30px 0 0 0;
+    padding: 0;
+    width: 300px; /* Fixed width */
+    height: 550px; /* Fixed height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f9f9f9;
+    overflow: hidden; /* Prevent scrolling */
+    box-shadow: none; /* Removed unnecessary shadow */
+}
+
+/* Settings Icon */
+#settings-icon {
+    position: absolute; /* Positioned relative to the entire popup */
+    top: 20px; /* Anchored at the top */
+    right: 20px; /* Aligned to the top-right corner */
+    font-size: 25px;
+    cursor: pointer;
+    color: #036b52; /* Zendesk green */
+}
+
+/* Back Button */
+#back-icon {
+    font-size: 20px; /* Slightly smaller for a clean UI */
+    cursor: pointer;
+    position: absolute;
+    top: 20px; /* Aligns with settings icon */
+    left: 20px; /* Anchored to the left */
+    color: #036b52; /* Zendesk green */
+}
+
+/* Logo */
+#logo {
+    width: 60px; /* Slightly smaller to fit everything */
+    height: 60px;
+    margin: 15px 0; /* Reduced margin */
+    display: block;
+    position: relative;
+    left: 50%; /* Start at 50% of the container width */
+    transform: translateX(-50%); /* Adjust to be centered horizontally */
+}
+
+/* Country Selector */
+#country-selector {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#country-code {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Dialer */
+#dialer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Reduced spacing for better layout */
+}
+
+.row {
+    display: flex;
+    gap: 5px;
+}
+
+.num-btn {
+    width: 55px; /* Smaller buttons */
+    height: 55px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.num-btn:hover {
+    background-color: #d4d4d4;
+}
+
+/* Phone Number Display */
+#phone-number-display {
+    font-size: 18px; /* Reduced font size */
+    line-height: 20px; /* Reduced line height */
+    margin-bottom: 5px; /* Reduced margin below */
+    padding: 5px 0; /* Reduced padding */
+    background: rgba(255, 255, 255, 0); /* Transparent */
+    width: 80%; /* Smaller width to fit */
+    text-align: center;
+    min-height: 20px; /* Fixed height to avoid layout shifts */
+}
+
+/* Settings Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    margin-top: 40px; /* Spacing below the back button */
+    width: 80%; /* Adjust width to fit the form */
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+}
+
+input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%; /* Full width input fields */
+}
+
+button#save-settings {
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #036b52; /* Zendesk green */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button#save-settings:hover {
+    background-color: #028a65; /* Slightly lighter green */
+}
+
+/* Action Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px; /* Reduced spacing */
+}
+
+#call-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #036b52; /* Zendesk green */
+    border: none;
+    cursor: pointer;
+    background-image: url('../../icons/white-phone-icon.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#hangup-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #b22222; /* Dark red */
+    border: none;
+    cursor: pointer;
+    background-image: url('../../icons/white-phone-icon.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#backspace-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #e8e8e8;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Footer Text */
+#footer-text {
+    font-size: 10px;
+    color: #555; /* Neutral grey for subtle styling */
+    margin-top: 30px;
+    text-align: center;
+}
+
+#footer-text a {
+    color: #036b52; /* Zendesk green for the link */
+    text-decoration: none;
+}
+
+#footer-text a:hover {
+    text-decoration: line-through;
+}
