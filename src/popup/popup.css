@@ -49,6 +49,8 @@ body {
 #country-selector {
     margin-bottom: 10px;
     text-align: center;
+    max-height: 100px;
+    overflow-y: auto;
 }
 
 #country-code {
@@ -56,6 +58,8 @@ body {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ddd;
+    max-height: 100px; /* Constrain the height of the dropdown */
+    overflow-y: auto;  /* Enable scrolling */
 }
 
 /* Dialer */

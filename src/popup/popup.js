@@ -37,7 +37,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const url = `https://${subdomain}.zendesk.com/api/v2/channels/voice/callback_requests`;
             const headers = {
                 Authorization: `Basic ${btoa(`${email}/token:${apiToken}`)}`,
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Accept": "application/json"
             };
             const body = JSON.stringify({
                 callback_request: {
@@ -64,7 +65,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (!response.ok) {
                         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                     }
-                    return response.json();
+
+                    // Check if the response has a body
+                    const contentLength = response.headers.get("Content-Length");
+                    if (contentLength && parseInt(contentLength) > 0) {
+                        return response.json();
+                    } else {
+                        return {}; // Return an empty object if there's no response body
+                    }
                 })
                 .then((data) => {
                     console.log("API Response Data:", data);
