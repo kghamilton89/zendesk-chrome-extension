@@ -42,8 +42,8 @@ document.addEventListener('DOMContentLoaded', () => {
             };
             const body = JSON.stringify({
                 callback_request: {
-                    phone_number_id: talkLineId,
-                    requester_phone_number: fullPhoneNumber,
+                    phone_number_id: fullPhoneNumber,
+                    requester_phone_number: talkLineId,
                     group_ids: [groupId]
                 }
             });
